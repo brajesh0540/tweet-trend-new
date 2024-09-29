@@ -46,6 +46,7 @@ environment{
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
                             }
+                            
                          ]
                      }"""
                      def buildInfo = server.upload(uploadSpec)
