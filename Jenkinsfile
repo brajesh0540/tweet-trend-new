@@ -21,16 +21,16 @@ environment{
                  echo "unit test copleted"
             }
         }
-    stage('SonarQube analysis') {
-    environment {
+    //stage('SonarQube analysis') {
+    //environment {
         scannerHome = tool 'brajesh540-sonar-scanner';
-    }
-    steps{
-    withSonarQubeEnv('brajesh540-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
-      sh "${scannerHome}/bin/sonar-scanner"
-    }
-  }
-    }
+    //}
+    //steps{
+    //withSonarQubeEnv('brajesh540-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
+      //sh "${scannerHome}/bin/sonar-scanner"
+    //}
+  //}
+    //}
     stage("Jar Publish") {
         steps {
             script {
