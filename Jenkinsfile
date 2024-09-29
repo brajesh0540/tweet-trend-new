@@ -23,7 +23,7 @@ environment{
         }
     //stage('SonarQube analysis') {
     //environment {
-        scannerHome = tool 'brajesh540-sonar-scanner';
+        //scannerHome = tool 'brajesh540-sonar-scanner';
     //}
     //steps{
     //withSonarQubeEnv('brajesh540-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
